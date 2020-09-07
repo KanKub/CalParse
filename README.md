@@ -8,6 +8,7 @@ plain text output
 
 math mode output  
 $\cp{{Dz}/{Dx} = 5/6}$  
+
 String replacement table
 -------------------------------
  D  -> partial  
