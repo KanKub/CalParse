@@ -13,7 +13,7 @@ plain text output
 String replacement table
 -------------------------------
 ```
- D  -> partial  
+D  -> partial  
 *(  -> \left(  
 *)  -> \left)  
 *[  -> \left[  
