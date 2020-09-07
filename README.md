@@ -1,7 +1,7 @@
 # CalParse
 for LaTeX
 
-Replace table
+String replacement table
 -------------------------------
 D -> partial
 *( -> \left(
