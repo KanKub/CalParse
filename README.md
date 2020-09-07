@@ -26,3 +26,7 @@ a/b           -> \frac{a}{b}
 {abc}*/{def}  -> \dfrac{abc}{def}  
 a*/b          -> \dfrac{a}{b}  
 ```
+  
+Known bugs
+-------------------------------
+- incompatible with \sin \cos \tan \arctan etc.
