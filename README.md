@@ -1,4 +1,4 @@
-# CalParse
+# CalParse v1.1
 for LaTeX
 
 String replacement table
