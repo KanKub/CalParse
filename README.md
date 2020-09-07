@@ -1,13 +1,14 @@
 # CalParse v1.1
-for LaTeX
+for LaTeX  
+Shorter math commands for calculus  
 
 Example
 ------------------------------
 plain text output  
-\cm{{Dz}/{Dx} = {2x}/{(x^2+y^2)} - {2x^3}/{(x^2+y^2)^2}} 
+`\cm{{Dz}/{Dx} = {2x}/{(x^2+y^2)} - {2x^3}/{(x^2+y^2)^2}}` 
 
 math mode output  
-$\cp{{Dz}/{Dx} = 5/6}$  
+`$\cp{{Dz}/{Dx} = 5/6}$`  
 
 String replacement table
 -------------------------------
