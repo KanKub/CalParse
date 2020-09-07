@@ -1,6 +1,11 @@
 # CalParse v1.1
 for LaTeX
 
+Example
+------------------------------
+\cm{{Dz}/{Dx} = {2x}/{(x^2+y^2)} - {2x^3}/{(x^2+y^2)^2}} 
+
+
 String replacement table
 -------------------------------
  D  -> partial  
