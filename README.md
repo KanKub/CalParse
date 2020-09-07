@@ -3,7 +3,7 @@ for LaTeX
 
 String replacement table
 -------------------------------
- D  -> partial
+ D  -> partial \n
 *(  -> \left(
 *)  -> \left)
 *[  -> \left[
