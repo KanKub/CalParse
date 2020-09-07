@@ -6,10 +6,10 @@ Example
 ------------------------------
 math mode output  
 `\cm{{Dz}/{Dx} = {2x}/{(x^2+y^2)} - {2x^3}/{(x^2+y^2)^2}}` 
-![Math Mode Output](/images/tex1.png)  
+!(/images/tex1.png)  
 plain text output  
 `$\cp{{Dz}/{Dx} = 5/6}$`  
-![Plain Text Output](/images/tex2.png)  
+!(/images/tex2.png)  
 String replacement table  
 -------------------------------
 ```
