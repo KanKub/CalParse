@@ -1,0 +1,47 @@
+\usepackage{xstring}
+
+%cal parse 
+\newcommand{\cp}[1]{
+    \def\temp{ #1 } \StrCount{\temp}{*/}[\divcount]
+    \newcount\divstart \newcount\divend \newcount\i\i=0
+    \ifnum \divcount > 0
+    \loop
+        \advance\i 1
+        \StrPosition[1]{\temp}{*/}[\divpos]
+        \divstart=\divpos \divend=\divpos
+        \advance\divstart -1 \advance\divend 2
+        \StrChar{\temp}{\divstart}[\up]
+        \StrChar{\temp}{\divend}[\bottom]
+        \advance\divstart -1
+        \StrSplit{\temp}{\divstart}{\front}{\junk}
+        \StrSplit{\temp}{\divend}{\junk}{\back}
+        \edef\temp{\front\dfrac{\up}{\bottom}\back}
+    \ifnum \i<\divcount \repeat \fi
+    \i=0 \StrCount{\temp}{/}[\divcount]
+    \ifnum \divcount > 0
+    \loop
+        \advance\i 1
+        \StrPosition[1]{\temp}{/}[\divpos]
+        \divstart=\divpos \divend=\divpos
+        \advance\divstart -1 \advance\divend 1
+        \StrChar{\temp}{\divstart}[\up]
+        \StrChar{\temp}{\divend}[\bottom]
+        \advance\divstart -1
+        \StrSplit{\temp}{\divstart}{\front}{\junk}
+        \StrSplit{\temp}{\divend}{\junk}{\back}
+        \edef\temp{\front\frac{\up}{\bottom}\back}
+    \ifnum \i<\divcount \repeat \fi
+    \exploregroups
+    \StrSubstitute{\temp}{D}{\partial}[\temp]
+    \StrSubstitute{\temp}{*(}{\left(}[\temp]
+    \StrSubstitute{\temp}{*)}{\right)}[\temp]
+    \StrSubstitute{\temp}{*[}{\left[}[\temp]
+    \StrSubstitute{\temp}{*[}{\right]}[\temp]
+    \StrSubstitute{\temp}{.}{\cdot}[\temp]
+    \temp
+}
+
+%cal math
+\newcommand{\cm}[1]{
+    $\cp{#1}$
+}
