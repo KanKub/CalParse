@@ -1,6 +1,7 @@
 # CalParse v1.1
 for LaTeX  
 Shorter math commands for calculus  
+Open calparse.tex above and copy it!
 
 Example
 ------------------------------
