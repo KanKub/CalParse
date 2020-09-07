@@ -12,6 +12,7 @@ plain text output
 
 String replacement table
 -------------------------------
+```
  D  -> partial  
 *(  -> \left(  
 *)  -> \left)  
@@ -22,4 +23,4 @@ String replacement table
 a/b           -> \frac{a}{b}  
 {abc}*/{def}  -> \dfrac{abc}{def}  
 a*/b          -> \dfrac{a}{b}  
-
+```
