@@ -4,12 +4,10 @@ Shorter math commands for calculus
 
 Example
 ------------------------------
-math mode output 
-`\cm{{Dz}/{Dx} = {2x}/{(x^2+y^2)} - {2x^3}/{(x^2+y^2)^2}}`  
+math mode output `\cm{{Dz}/{Dx} = {2x}/{(x^2+y^2)} - {2x^3}/{(x^2+y^2)^2}}`  
 ![Math](/images/tex1.png)  
-  
-plain text output  
-`$\cp{{Dz}/{Dx} = 5/6}$`  
+
+plain text output `$\cp{{Dz}/{Dx} = 5/6}$`  
 ![Text](/images/tex2.png)  
   
 String replacement table  
