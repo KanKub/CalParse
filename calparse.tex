@@ -1,7 +1,7 @@
 \usepackage{xstring}
 
 %cal parse v1.1 by KanKub
-\newcommand{\cp}[1]{
+\newcommand{\calp}[1]{
     \def\temp{ #1 } \StrCount{\temp}{*/}[\divcount]
     \newcount\divstart \newcount\divend \newcount\i\i=0
     \ifnum \divcount > 0
@@ -42,6 +42,6 @@
 }
 
 %cal math
-\newcommand{\cm}[1]{
+\newcommand{\calm}[1]{
     $\cp{#1}$
 }
